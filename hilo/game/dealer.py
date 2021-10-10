@@ -56,4 +56,5 @@ class Dealer:
         else:
             self.current_card = self.new_card
             
-        self.new_card = random.choice(numbers)
+        while self.current_card == self.new_card:
+            self.new_card = random.choice(numbers)
